@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --blue:#2980b9;
+   --red:tomato;
+   --orange:orange;
+   --black:#333;
+   --white:#fff;
+   --bg-color:#eee;
+   --dark-bg:rgba(0,0,0,.7);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border:.1rem solid #999;
+}
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+body {
+    background-color: #f8f8f8;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+#bg-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.box-login {
+    width: 300px;
+    min-height: 200px;
+    border:1px solid #ccc;
+    background-color: #fff;
+    padding:15px;
+    box-sizing: border-box;
+}
+.box-login h2 {
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.input-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.btn {
+    padding:8px 15px;
+    background-color: #2D4DD8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.header{
+    background-color:	#A0522D;
+    position: sticky;
+    top:0; left:0;
+    z-index: 1000;
+ }
+ 
+ .header .flex{
+    display: flex;
+    align-items: center;
+    padding:1.5rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+ .header .flex .logo{
+    margin-right: auto;
+    font-size: 2.5rem;
+    color:var(--white);
+ }
+ 
+ .header .flex .navbar a{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color:var(--white);
+ }
+ 
+ .header .flex .navbar a:hover{
+    color:yellow;
+ }
+ 
+ .header .flex .cart{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color:var(--white);
+ }
+ 
+ .header .flex .cart:hover{
+    color:yellow;
+ }
+ 
+ .header .flex .cart span{
+    padding:.1rem .5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color:var(--blue);
+    font-size: 2rem;
+ }
+footer{
+   padding: 25px 0; 
+}
+.container {
+    width: 80%;
+    margin:0 auto;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.section {
+    padding: 25px 0;
+     
+}
+.box {
+    background-color: #fff;
+    border:1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 25px 0;
+}
+.box::after{
+   content: '';
+   display: block;
+   clear: both; 
+}
+.table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table tr {
+    height: 30px;
+}
+.table tr td {
+    padding: 5px 10px;
+}
+.search{
+    padding:15px 0;
+    background-color: #fff;
+    border:2px solid #ccc;
+    text-align: center;
+}
+.search input[type=text]{
+    width: 60%;
+    padding: 10px;
+}
+.search [type=submit]{
+    padding: 12px 15px;
+    background-color: #FF33D7;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+}
+.col-5{
+    width:20%;
+    height: 100px;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.col-4{
+    width: 25%;
+    height: 350px;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+}
+.col-4:hover {
+    box-shadow: 0 0 3px #999;
+}
+.col-4 .nama{
+    color: #666;
+    margin-bottom: 3px;
+}
+.col-4 .harga{
+    font-weight: bold;
+    color: #FF33D7;
+    float: right;
+}
+.col-4 .nomer{
+    padding: 3px;
+    margin-bottom: 5px;
+}
+.col-4 .btn{
+    padding: 5px;
+}
+
+.footer{
+    padding: 25px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.footer p{
+    margin-bottom: 10px;
+}
+.footer small{
+    margin-top: 25px;
+    display: inline-block;
+}
+.col-2{
+    width: 50%;
+    min-height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.col-2 img{
+    border: 1px solid #f9f9f9;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.col-2 h3{
+    margin-bottom: 10px;
+}
+.col-2 h4{
+    color: #FF33D7;
+}
+.col-2 p{
+    margin:15px 0;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .container{
+     width: 90%;   
+    }
+    .col-5{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .col-4{
+        width: 50%;
+        height: 300px;
+    }
+    .col-2{
+        width: 100%;
+    }
+}
